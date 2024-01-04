@@ -42,7 +42,6 @@ If you want to use the default python clients, implement:
 tunneler() in client_tunnel.py and
 detect() in client_detector.py
 
----------------------------------------------------------
 
 If you want to use your own client:
 
@@ -81,4 +80,3 @@ You can use as many probes as you'd like. less the better.
 
 Given n (the grid is n by n), p (the number of phases), and k (the length of the path which must be at least n-1), (i) draw the grid, (ii) distribute n, p, k to both players, (iii) receive the edges of the tunnel from T, (iv) display the tunnel to the viewers. Then the architect will give interact with D to get the probes for each phase, display the answers and provide them to D, and get D's guess as to the tunnel path after all p phases. The architect will then calculate D's score. In each game, each of T and D have two minutes to play. Thus, a full competition should take 8 minutes or less (especially because T will normally play quite fast). This is the architecture for Dig That on the game website.
 
-# --------------------------------------------------#
