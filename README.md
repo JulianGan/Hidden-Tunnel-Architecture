@@ -81,22 +81,6 @@ the player with the lower score as the detector wins the game.
 You can use as many probes as you'd like. less the better.
 
 
-# Word for word description from class website
-
-There is a grid of size n by n, where n will be given the day of the competition. One player, called T for tunneler, has placed a tunnel from the bottom, beginning anywhere along the horizontal line marked Start in the south, and ending anywhere along the horizontal side End in the north. The tunnel follows the path of the roads somehow but may wind around. It is also a simple path (no dead ends and no loops along the way). Further, at any intersection, there cannot be more than two streets having parts of the tunnel underneath that intersection.
-
-The second player, called D for detector, wants to probe a minimum number of times and yet be able to find the exact route of the tunnel.
-
-Suppose a probe reports whether a tunnel ran under an intersection or not and which street(s) (up to two streets) next to the intersection the tunnel runs under. Thus, it is a directional probe.
-
-The tunnel is at most k blocks (a parameter I will give on the day of the competition) long and begins at Start and ends at End.
-
-The game will be played in p phases (another parameter given at the day of the competition). In each phase, D will place some number of probes at intersections and will recive their reports. By the end of the last phase, D must guess the tunnel.
-
-The score of D is the number of probes D used assuming D found the path. If D does not find the path, then the score is infinity. D's goal is to get as low a score as possible.
-
-Each competition will consist of two games where each team plays the role of T once and D once. Whichever team receives the lowest score as D wins.
-
 Given n (the grid is n by n), p (the number of phases), and k (the length of the path which must be at least n-1), (i) draw the grid, (ii) distribute n, p, k to both players, (iii) receive the edges of the tunnel from T, (iv) display the tunnel to the viewers. Then the architect will give interact with D to get the probes for each phase, display the answers and provide them to D, and get D's guess as to the tunnel path after all p phases. The architect will then calculate D's score. In each game, each of T and D have two minutes to play. Thus, a full competition should take 8 minutes or less (especially because T will normally play quite fast). This is the architecture for Dig That on the game website.
 
 # --------------------------------------------------#
