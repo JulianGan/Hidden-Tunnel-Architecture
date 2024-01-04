@@ -4,8 +4,6 @@
 
 # Hidden Tunnel Game Implementation
 
-`important note please read`
-
 The default server-sided tunnel validity checker is set to ignore invalid paths and return True or False.
 I set it this way because exceptions are annoying.
 But during the competition, I will use another checker, also provided, which will raise an exception if the tunnel pathing is invalid.
