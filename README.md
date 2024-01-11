@@ -1,7 +1,4 @@
 
-
-`questions, concerns, comments -> email or google spaces chat (jg7955@nyu.edu)`
-
 # Hidden Tunnel Game Implementation
 
 The default server-sided tunnel validity checker is set to ignore invalid paths and return True or False.
@@ -11,7 +8,7 @@ The two checkers are identical other than the fact that one raises exceptions wh
 
 see server.py line 52 for the actual calls to the validity check functions and you'll see what I mean.
 
-`Logistics`
+## Logistics
 
 Grid is an n by n, where the x-coordinates and y-coordinates range from 0 to n-1 inclusive, or, [0, n-1].
 An intersection is a point on the grid. (x, y) is an intersection.
@@ -22,11 +19,11 @@ An edge is two points on the grid. In general, (x1, y1, x2, y2) is a directed ed
 
 After the last phase, an additional phase numbered 'p+1' will ask the Detector to return their guess for the path of the tunnel
 
-`Visualization`
+## Visualization
 
 The server prints a basic ascii visual. The grid is printed along with the tunnel path being represented by the character 'e'. Probes are represented by 'P' and the guess path made by the detector is represented by 'G'. These symbols can be adjusted in "ascii_visual.py" lines 10-15.
 
-`how to run`
+## how to run
 
 with default python clients:
 
@@ -36,14 +33,14 @@ with default python clients:
 
 if you use your own client, see below for setup
 
-`how to implement solution`
+## how to implement solution
 
 If you want to use the default python clients, implement:
 tunneler() in client_tunnel.py and
 detect() in client_detector.py
 
 
-If you want to use your own client:
+**If you want to use your own client**
 
 The server expects two separate connections coming in one by one, as in,
 once the tunneler connects and sends the tunnel info, the tunneler is disconnected,
@@ -63,7 +60,7 @@ This path should be of the same format as that sent out by tunneler.
 
 for further questions or clarification, contact me
 
-`inputs and scoring mechanism`
+## inputs and scoring mechanism
 
 Specified at competition:
 
@@ -80,3 +77,5 @@ You can use as many probes as you'd like. less the better.
 
 Given n (the grid is n by n), p (the number of phases), and k (the length of the path which must be at least n-1), (i) draw the grid, (ii) distribute n, p, k to both players, (iii) receive the edges of the tunnel from T, (iv) display the tunnel to the viewers. Then the architect will give interact with D to get the probes for each phase, display the answers and provide them to D, and get D's guess as to the tunnel path after all p phases. The architect will then calculate D's score. In each game, each of T and D have two minutes to play. Thus, a full competition should take 8 minutes or less (especially because T will normally play quite fast). This is the architecture for Dig That on the game website.
 
+
+questions, concerns, comments -> email or google spaces chat **jg7955@nyu.edu**
